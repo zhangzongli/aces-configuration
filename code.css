@@ -1,5 +1,5 @@
-/*--------2台机组样式(美廉美超市(回龙观店))--------*/
-.two_mlmhlgd_left_waterbump01{
+/*--------3台机组样式(惠新物美)--------*/
+.three_hxwm_left_waterbump01{
 	width:225px;
 	height:auto;
 	overflow:hidden;
@@ -8,7 +8,7 @@
 	left:20px;
 	display:none;
 }
-.two_mlmhlgd_left_waterbump02{
+.three_hxwm_left_waterbump02{
 	width:225px;
 	height:auto;
 	overflow:hidden;
@@ -17,7 +17,16 @@
 	left:20px;
 	display:none;
 }
-.two_mlmhlgd_right_waterbump01{
+.three_hxwm_left_waterbump03{
+	width:225px;
+	height:auto;
+	overflow:hidden;
+	position:absolute;
+	top:170px;
+	left:20px;
+	display:none;
+}
+.three_hxwm_right_waterbump01{
 	width:225px;
 	height:auto;
 	overflow:hidden;
@@ -26,7 +35,7 @@
 	right:110px;
 	display:none;
 }
-.two_mlmhlgd_right_waterbump02{
+.three_hxwm_right_waterbump02{
 	width:225px;
 	height:auto;
 	overflow:hidden;
@@ -35,7 +44,16 @@
 	right:110px;
 	display:none;
 }
-.two_mlmhlgd_cooler01{
+.three_hxwm_right_waterbump03{
+	width:225px;
+	height:auto;
+	overflow:hidden;
+	position:absolute;
+	top:170px;
+	right:110px;
+	display:none;
+}
+.three_hxwm_cooler01{
 	width:225px;
 	height:auto;
 	overflow:hidden;
@@ -44,7 +62,7 @@
 	left:530px;
 	display:none;
 }
-.two_mlmhlgd_cooler02{
+.three_hxwm_cooler02{
 	width:225px;
 	height:auto;
 	overflow:hidden;
@@ -53,7 +71,16 @@
 	left:530px;
 	display:none;
 }
-.two_mlmhlgd_fan01{
+.three_hxwm_cooler03{
+	width:225px;
+	height:auto;
+	overflow:hidden;
+	position:absolute;
+	top:300px;
+	left:530px;
+	display:none;
+}
+.three_hxwm_fan01{
 	width:225px;
 	height:auto;
 	overflow:hidden;
@@ -62,7 +89,16 @@
 	left:750px;
 	display:none;
 }
-.two_mlmhlgd_fan02{
+.three_hxwm_fan02{
+	width:225px;
+	height:auto;
+	overflow:hidden;
+	position:absolute;
+	top:0px;
+	left:750px;
+	display:none;
+}
+.three_hxwm_fan03{
 	width:225px;
 	height:auto;
 	overflow:hidden;
@@ -72,73 +108,109 @@
 	display:none;
 }
 /*偏移量 -XXpx*/
-.two_mlmhlgd_left_waterbump01_states{
+.three_hxwm_left_waterbump01_states{
 	width:33px;
 	height:14px;
 	position:absolute;
 	left:103px;
 	top:347px;
-	background:url(../images/configuration/mlmhlgd/mlmhlgd_left_waterpumb01_states.png) no-repeat center 0;
+	background:url(../images/configuration/hxwm/hxwm_left_waterpumb01_states.png) no-repeat center 0;
 }
 /*偏移量 -XXpx*/
-.two_mlmhlgd_left_waterbump02_states{
+.three_hxwm_left_waterbump02_states{
 	width:33px;
 	height:14px;
 	position:absolute;
 	left:103px;
 	top:347px;
-	background:url(../images/configuration/mlmhlgd/mlmhlgd_left_waterpumb02_states.png) no-repeat center 0;
+	background:url(../images/configuration/hxwm/hxwm_left_waterpumb02_states.png) no-repeat center 0;
 }
 /*偏移量 -XXpx*/
-.two_mlmhlgd_right_waterbump01_states{
+.three_hxwm_left_waterbump03_states{
+	width:33px;
+	height:14px;
+	position:absolute;
+	left:103px;
+	top:347px;
+	background:url(../images/configuration/hxwm/hxwm_left_waterpumb03_states.png) no-repeat center 0;
+}
+/*偏移量 -XXpx*/
+.three_hxwm_right_waterbump01_states{
 	width:30px;
 	height:14px;
 	position:absolute;
 	right:105px;
 	top:350px;
-	background:url(../images/configuration/mlmhlgd/mlmhlgd_right_waterpumb01_states.png) no-repeat center 0;
+	background:url(../images/configuration/hxwm/hxwm_right_waterpumb01_states.png) no-repeat center 0;
 }
 /*偏移量 -XXpx*/
-.two_mlmhlgd_right_waterbump02_states{
+.three_hxwm_right_waterbump02_states{
 	width:30px;
 	height:14px;
 	position:absolute;
 	right:105px;
 	top:350px;
-	background:url(../images/configuration/mlmhlgd/mlmhlgd_right_waterpumb02_states.png) no-repeat center 0;
+	background:url(../images/configuration/hxwm/hxwm_right_waterpumb02_states.png) no-repeat center 0;
+}
+/*偏移量 -XXpx*/
+.three_hxwm_right_waterbump03_states{
+	width:30px;
+	height:14px;
+	position:absolute;
+	right:105px;
+	top:350px;
+	background:url(../images/configuration/hxwm/hxwm_right_waterpumb03_states.png) no-repeat center 0;
 }
 /*偏移量 -XX*/
-.two_mlmhlgd_cooler01_states{
+.three_hxwm_cooler01_states{
 	width:39px;
 	height:23px;
-	background:url(../images/configuration/mlmhlgd/mlmhlgd_cooler01_states.png) no-repeat center 0;
+	background:url(../images/configuration/hxwm/hxwm_cooler01_states.png) no-repeat center 0;
 	position:absolute;
 	left:684px;
 	top:440px;
 }
 /*偏移量 -XX*/
-.two_mlmhlgd_cooler02_states{
+.three_hxwm_cooler02_states{
 	width:39px;
 	height:23px;
-	background:url(../images/configuration/mlmhlgd/mlmhlgd_cooler02_states.png) no-repeat center 0;
+	background:url(../images/configuration/hxwm/hxwm_cooler02_states.png) no-repeat center 0;
+	position:absolute;
+	left:684px;
+	top:440px;
+}
+/*偏移量 -XX*/
+.three_hxwm_cooler03_states{
+	width:39px;
+	height:23px;
+	background:url(../images/configuration/hxwm/hxwm_cooler03_states.png) no-repeat center 0;
 	position:absolute;
 	left:684px;
 	top:440px;
 }
 /*偏移量 -XXpx*/
-.two_mlmhlgd_fan01_states{
+.three_hxwm_fan01_states{
 	width:84px;
 	height:43px;
-	background:url(../images/configuration/mlmhlgd/mlmhlgd_fan01_states.png) no-repeat center 0;
+	background:url(../images/configuration/hxwm/hxwm_fan01_states.png) no-repeat center 0;
 	position:absolute;
 	left:952px;
 	top:47px;
 }
 /*偏移量 -XXpx*/
-.two_mlmhlgd_fan02_states{
+.three_hxwm_fan02_states{
 	width:84px;
 	height:43px;
-	background:url(../images/configuration/mlmhlgd/mlmhlgd_fan02_states.png) no-repeat center 0;
+	background:url(../images/configuration/hxwm/hxwm_fan02_states.png) no-repeat center 0;
+	position:absolute;
+	left:952px;
+	top:47px;
+}
+/*偏移量 -XXpx*/
+.three_hxwm_fan03_states{
+	width:84px;
+	height:43px;
+	background:url(../images/configuration/hxwm/hxwm_fan03_states.png) no-repeat center 0;
 	position:absolute;
 	left:952px;
 	top:47px;
@@ -163,4 +235,4 @@
 	right:220px;
 	top:200px;
 }
-/*--------2台机组样式(美廉美超市(回龙观店))--------*/
+/*--------3台机组样式(惠新物美)--------*/

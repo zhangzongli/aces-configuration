@@ -7,27 +7,31 @@
         <script type="text/javascript" src="<%=request.getContextPath()%>/zdmonitor/js/configuration.js"></script>
     </style>
 </head>
-<!--2台主机代码(美廉美超市(回龙观店))--><li class="configuration_li current">
+<!--3台主机代码(惠新物美)--><li class="configuration_li current">
     <div class="configuration_img">
         <img src="images/configuration/${backgroundImag}" alt="" width="1220" height="732" usemap="#Map6"/>
         <map name="Map6">
             <%--左侧水泵--%>
-            <area class="two_mlmhlgd_area01" shape="rect" coords="88,350,180,400" href="#">
-            <area class="two_mlmhlgd_area02" shape="rect" coords="88,350,180,400" href="#">
+            <area class="three_hxwm_area01" shape="rect" coords="88,350,180,400" href="#">
+            <area class="three_hxwm_area02" shape="rect" coords="88,350,180,400" href="#">
+            <area class="three_hxwm_area03" shape="rect" coords="88,350,180,400" href="#">
             <%--右侧水泵--%>
-            <area class="two_mlmhlgd_area03" shape="rect" coords="88,350,180,400" href="#">
-            <area class="two_mlmhlgd_area04" shape="rect" coords="88,350,180,400" href="#">
+            <area class="three_hxwm_area04" shape="rect" coords="88,350,180,400" href="#">
+            <area class="three_hxwm_area05" shape="rect" coords="88,350,180,400" href="#">
+            <area class="three_hxwm_area06" shape="rect" coords="88,350,180,400" href="#">
             <%--中间机组--%>
-            <area class="two_mlmhlgd_area05" shape="rect" coords="88,350,180,400" href="<%=request.getContextPath()%>/zdmonitor/EnergyAnalysis.action?tabId=3&objId=1&typeId=1">
-            <area class="two_mlmhlgd_area06" shape="rect" coords="88,350,180,400" href="<%=request.getContextPath()%>/zdmonitor/EnergyAnalysis.action?tabId=3&objId=2&typeId=1">
+            <area class="three_hxwm_area07" shape="rect" coords="88,350,180,400" href="<%=request.getContextPath()%>/zdmonitor/EnergyAnalysis.action?tabId=3&objId=1&typeId=1">
+            <area class="three_hxwm_area08" shape="rect" coords="88,350,180,400" href="<%=request.getContextPath()%>/zdmonitor/EnergyAnalysis.action?tabId=3&objId=2&typeId=1">
+            <area class="three_hxwm_area09" shape="rect" coords="88,350,180,400" href="<%=request.getContextPath()%>/zdmonitor/EnergyAnalysis.action?tabId=3&objId=3&typeId=1">
             <%--右上风机--%>
-            <area class="two_mlmhlgd_area07" shape="rect" coords="88,350,180,400" href="#">
-            <area class="two_mlmhlgd_area08" shape="rect" coords="88,350,180,400" href="#">
+            <area class="three_hxwm_area10" shape="rect" coords="88,350,180,400" href="#">
+            <area class="three_hxwm_area11" shape="rect" coords="88,350,180,400" href="#">
+            <area class="three_hxwm_area12" shape="rect" coords="88,350,180,400" href="#">
         </map>
     </div>
     <div class="configuration_alertmsg">
         <!--左侧水泵鼠标移上弹出-->
-        <div class="two_mlmhlgd_left_waterbump01">
+        <div class="three_hxwm_left_waterbump01">
             <span class="configuration_alertmsg_top"></span>
             <div class="configuration_alertmsg_center">
                 <p>累计运行时间：<span class="total_run_time"></span>h</p>
@@ -39,7 +43,19 @@
             </div>
             <span class="configuration_alertmsg_down"></span>
         </div>
-        <div class="two_mlmhlgd_left_waterbump02">
+        <div class="three_hxwm_left_waterbump02">
+            <span class="configuration_alertmsg_top"></span>
+            <div class="configuration_alertmsg_center">
+                <p>累计运行时间：<span class="total_run_time"></span>h</p>
+                <p>频率反馈：<span class="frequency_feedback"></span>Hz</p>
+                <p>运行状态：<span class="run_state"></span></p>
+                <p>故障报警：<span class="fault_alarm"></span></p>
+                <p>自动：<span class="hands_auto"></span></p>
+                <p>输入功率：<span class="input_power"></span>kw</p>
+            </div>
+            <span class="configuration_alertmsg_down"></span>
+        </div>
+        <div class="three_hxwm_left_waterbump03">
             <span class="configuration_alertmsg_top"></span>
             <div class="configuration_alertmsg_center">
                 <p>累计运行时间：<span class="total_run_time"></span>h</p>
@@ -52,7 +68,7 @@
             <span class="configuration_alertmsg_down"></span>
         </div>
         <!--右侧水泵鼠标移上弹出-->
-        <div class="two_mlmhlgd_right_waterbump01">
+        <div class="three_hxwm_right_waterbump01">
             <span class="configuration_alertmsg_top"></span>
             <div class="configuration_alertmsg_center">
                 <p>累计运行时间：<span class="total_run_time"></span>h</p>
@@ -64,7 +80,19 @@
             </div>
             <span class="configuration_alertmsg_down"></span>
         </div>
-        <div class="two_mlmhlgd_right_waterbump02">
+        <div class="three_hxwm_right_waterbump02">
+            <span class="configuration_alertmsg_top"></span>
+            <div class="configuration_alertmsg_center">
+                <p>累计运行时间：<span class="total_run_time"></span>h</p>
+                <p>频率反馈：<span class="frequency_feedback"></span>Hz</p>
+                <p>运行状态：<span class="run_state"></span></p>
+                <p>故障报警：<span class="fault_alarm"></span></p>
+                <p>自动：<span class="hands_auto"></span></p>
+                <p>输入功率：<span class="input_power"></span>kw</p>
+            </div>
+            <span class="configuration_alertmsg_down"></span>
+        </div>
+        <div class="three_hxwm_right_waterbump03">
             <span class="configuration_alertmsg_top"></span>
             <div class="configuration_alertmsg_center">
                 <p>累计运行时间：<span class="total_run_time"></span>h</p>
@@ -77,7 +105,7 @@
             <span class="configuration_alertmsg_down"></span>
         </div>
         <!--中间机组鼠标移上弹出-->
-        <div class="two_mlmhlgd_cooler01">
+        <div class="three_hxwm_cooler01">
             <span class="configuration_alertmsg_top"></span>
             <div class="configuration_alertmsg_center">
                 <p>累计运行时间：<span class="total_run_time"></span>h</p>
@@ -85,7 +113,15 @@
             </div>
             <span class="configuration_alertmsg_down"></span>
         </div>
-        <div class="two_mlmhlgd_cooler02">
+        <div class="three_hxwm_cooler02">
+            <span class="configuration_alertmsg_top"></span>
+            <div class="configuration_alertmsg_center">
+                <p>累计运行时间：<span class="total_run_time"></span>h</p>
+                <p>输入功率：<span class="input_power"></span>Kw</p>
+            </div>
+            <span class="configuration_alertmsg_down"></span>
+        </div>
+        <div class="three_hxwm_cooler03">
             <span class="configuration_alertmsg_top"></span>
             <div class="configuration_alertmsg_center">
                 <p>累计运行时间：<span class="total_run_time"></span>h</p>
@@ -94,7 +130,7 @@
             <span class="configuration_alertmsg_down"></span>
         </div>
         <!--上方风机鼠标移上弹出-->
-        <div class="two_mlmhlgd_fan01">
+        <div class="three_hxwm_fan01">
             <span class="configuration_alertmsg_top"></span>
             <div class="configuration_alertmsg_center">
                 <p>累计运行时间：<span class="total_run_time"></span>h</p>
@@ -105,7 +141,18 @@
             </div>
             <span class="configuration_alertmsg_down"></span>
         </div>
-        <div class="two_mlmhlgd_fan02">
+        <div class="three_hxwm_fan02">
+            <span class="configuration_alertmsg_top"></span>
+            <div class="configuration_alertmsg_center">
+                <p>累计运行时间：<span class="total_run_time"></span>h</p>
+                <p>集水盘水液位：<span class="drain_pan_water_level"></span></p>
+                <p>风机频率反馈：<span class="fans_frequency_feedback"></span></p>
+                <p>风机运行状态：<span class="fans_run_state"></span></p>
+                <p>输入功率：<span class="input_power"></span>kw</p>
+            </div>
+            <span class="configuration_alertmsg_down"></span>
+        </div>
+        <div class="three_hxwm_fan03">
             <span class="configuration_alertmsg_top"></span>
             <div class="configuration_alertmsg_center">
                 <p>累计运行时间：<span class="total_run_time"></span>h</p>
@@ -125,44 +172,60 @@
     </div>
     <div class="configuration_states">
         <!--左侧冷冻泵水泵的状态-->
-        <span class="two_mlmhlgd_left_waterbump01_states"></span>
-        <span class="two_mlmhlgd_left_waterbump02_states"></span>
+        <span class="three_hxwm_left_waterbump01_states"></span>
+        <span class="three_hxwm_left_waterbump02_states"></span>
+        <span class="three_hxwm_left_waterbump03_states"></span>
         <!--右侧冷冻泵水泵的状态-->
-        <span class="two_mlmhlgd_right_waterbump01_states"></span>
-        <span class="two_mlmhlgd_right_waterbump02_states"></span>
+        <span class="three_hxwm_right_waterbump01_states"></span>
+        <span class="three_hxwm_right_waterbump02_states"></span>
+        <span class="three_hxwm_right_waterbump03_states"></span>
         <!--主机的状态-->
-        <span class="two_mlmhlgd_cooler01_states"></span>
-        <span class="two_mlmhlgd_cooler02_states"></span>
+        <span class="three_hxwm_cooler01_states"></span>
+        <span class="three_hxwm_cooler02_states"></span>
+        <span class="three_hxwm_cooler03_states"></span>
         <!--风机的状态-->
-       <span class="one_bqjwm_fan01_states"></span>
-       <span class="one_bqjwm_fan01_states"></span>
+       <span class="three_hxwm_fan01_states"></span>
+       <span class="three_hxwm_fan02_states"></span>
+       <span class="three_hxwm_fan03_states"></span>
     </div>
 </li>
 <script type="text/javascript">
     $(function(){
-        $('.two_mlmhlgd_area01').hover(function(e) {
-            $('.two_mlmhlgd_left_waterbump01').toggle();
+        $('.three_hxwm_area01').hover(function(e) {
+            $('.three_hxwm_left_waterbump01').toggle();
         });
-        $('.two_mlmhlgd_area02').hover(function(e) {
-            $('.two_mlmhlgd_left_waterbump02').toggle();
+        $('.three_hxwm_area02').hover(function(e) {
+            $('.three_hxwm_left_waterbump02').toggle();
         });
-        $('.two_mlmhlgd_area03').hover(function(e) {
-            $('.two_mlmhlgd_right_waterbump01').toggle();
+        $('.three_hxwm_area03').hover(function(e) {
+            $('.three_hxwm_left_waterbump03').toggle();
         });
-        $('.two_mlmhlgd_area04').hover(function(e) {
-            $('.two_mlmhlgd_right_waterbump02').toggle();
+        $('.three_hxwm_area04').hover(function(e) {
+            $('.three_hxwm_right_waterbump01').toggle();
         });
-        $('.two_mlmhlgd_area05').hover(function(e) {
-            $('.two_mlmhlgd_cooler01').toggle();
+        $('.three_hxwm_area05').hover(function(e) {
+            $('.three_hxwm_right_waterbump02').toggle();
         });
-        $('.two_mlmhlgd_area06').hover(function(e) {
-            $('.two_mlmhlgd_cooler02').toggle();
+        $('.three_hxwm_area06').hover(function(e) {
+            $('.three_hxwm_right_waterbump03').toggle();
         });
-        $('.two_mlmhlgd_area07').hover(function(e) {
-            $('.two_mlmhlgd_fan01').toggle();
+        $('.three_hxwm_area07').hover(function(e) {
+            $('.three_hxwm_cooler01').toggle();
         });
-        $('.two_mlmhlgd_area08').hover(function(e) {
-            $('.two_mlmhlgd_fan02').toggle();
+        $('.three_hxwm_area08').hover(function(e) {
+            $('.three_hxwm_cooler02').toggle();
+        });
+        $('.three_hxwm_area09').hover(function(e) {
+            $('.three_hxwm_cooler03').toggle();
+        });
+        $('.three_hxwm_area10').hover(function(e) {
+            $('.three_hxwm_fan01').toggle();
+        });
+        $('.three_hxwm_area11').hover(function(e) {
+            $('.three_hxwm_fan02').toggle();
+        });
+        $('.three_hxwm_area12').hover(function(e) {
+            $('.three_hxwm_fan03').toggle();
         });
     });
 </script>

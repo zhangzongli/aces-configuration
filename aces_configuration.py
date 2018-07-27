@@ -265,7 +265,7 @@ def generateJsp():
     # 上方冷却塔拼接
     codeStr += """        <!--风机的状态-->\n"""
     for num in range(coolingTower):
-        codeStr += """       <span class="one_bqjwm_fan01_states"></span>\n"""
+        codeStr += """       <span class=\""""+ base_numAndName +"""_fan"""+ common.intToStr(num+1) +"""_states"></span>\n"""
     codeStr += """    </div>
 </li>\n"""
 
@@ -423,13 +423,13 @@ def generateCss():
 def generateJs():
     # 冷却塔js拼接----------复制至loadcoolingTower(arr,chillerNum)方法
     jsStr = """//冷却塔js拼接----------复制至loadcoolingTower(arr,chillerNum)方法\n"""
-    jsStr += """else if (g_configurationPicFlag=="flow-mlmhlgd") { //""" + projectName + """\n"""
+    jsStr += """else if (g_configurationPicFlag=="flow-"""+project_flag+"""") { //""" + projectName + """\n"""
     for num in range(coolingTower):
-        jsStr += """        $("."""+ base_numAndName +"""_fan"""+ common.intToStr(num+1) +""" .total_run_time").html(toFix(arr["""+ str(num+1) +"""].total_run_time)); //电流
-        $("."""+ base_numAndName +"""_fan"""+ common.intToStr(num+1) +""" .drain_pan_water_level").html(toFix(arr["""+ str(num+1) +"""].drain_pan_water_level)); //电压
-        $("."""+ base_numAndName +"""_fan"""+ common.intToStr(num+1) +""" .fans_frequency_feedback").html(toFix(arr["""+ str(num+1) +"""].fans_frequency_feedback)); //功率
-        $("."""+ base_numAndName +"""_fan"""+ common.intToStr(num+1) +""" .fans_run_state").html(getRunState(arr["""+ str(num+1) +"""].fans_run_state+"",arr["""+ str(num+1) +"""].fans_fault_alarm+"")); //累计能耗
-        $("."""+ base_numAndName +"""_fan"""+ common.intToStr(num+1) +"""_states").css("background",getTowerStatePicPosition(arr["""+ str(num+1) +"""].fans_run_state+"",arr["""+ str(num+1) +"""].fans_fault_alarm+"",\""""+ common.intToStr(num+1) +"""\"));//冷却塔颜色\n"""
+        jsStr += """        $("."""+ base_numAndName +"""_fan"""+ common.intToStr(num+1) +""" .total_run_time").html(toFix(arr["""+ str(num) +"""].total_run_time)); //电流
+        $("."""+ base_numAndName +"""_fan"""+ common.intToStr(num) +""" .drain_pan_water_level").html(toFix(arr["""+ str(num) +"""].drain_pan_water_level)); //电压
+        $("."""+ base_numAndName +"""_fan"""+ common.intToStr(num) +""" .fans_frequency_feedback").html(toFix(arr["""+ str(num) +"""].fans_frequency_feedback)); //功率
+        $("."""+ base_numAndName +"""_fan"""+ common.intToStr(num) +""" .fans_run_state").html(getRunState(arr["""+ str(num) +"""].fans_run_state+"",arr["""+ str(num) +"""].fans_fault_alarm+"")); //累计能耗
+        $("."""+ base_numAndName +"""_fan"""+ common.intToStr(num) +"""_states").css("background",getTowerStatePicPosition(arr["""+ str(num) +"""].fans_run_state+"",arr["""+ str(num) +"""].fans_fault_alarm+"",\""""+ common.intToStr(num) +"""\"));//冷却塔颜色\n"""
 
     jsStr += """}\n"""
     # 冷冻水泵js拼接--------复制至loadChilledPump(arr,chillerNum)方法
@@ -494,7 +494,7 @@ def generateJs():
             jsStr += """\"""" + common.intToStr(num + 1) + """\","""
         else:
             jsStr += """\"""" + common.intToStr(num + 1) + """\"];\n"""
-            n += 1
+        n += 1
     jsStr += """        for(var i=0; i<arr.length;i++) {\n"""
     jsStr += """            if(i>"""+ str(chillerNum - 1) +""") {
                 continue;
